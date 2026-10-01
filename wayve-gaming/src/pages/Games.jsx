@@ -1,16 +1,19 @@
-import CallToAction from '../components/CallToAction';
+﻿import CallToAction from '../components/CallToAction';
 import PageHero from '../components/PageHero';
 import Reveal from '../components/Reveal';
 import catalog from '../data/games.json';
+import androidIcon from '../assets/extras/android.png';
+import { resolveGameAsset } from '../utils/gameAssets';
+import ctaImage from '../assets/cta/cta-image.webp'
 
 export default function Games() {
   return (
     <div className="bg-white dark:bg-black">
         <PageHero
-            imagePath="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=2000&q=85"
+            imagePath={resolveGameAsset('/assets/games/main-game-page-hero.webp')}
             pageName="Our Games"
-            heading={<>World-Class <span className="text-primary-dark">Games</span> Built to Play</>}
-            description="Explore the worlds, systems, and stories our studio is building for players everywhere."
+            heading={<>Games Built for   <span className="text-primary-dark">Every Kind</span>  of Player</>}
+            description="Explore horror, survival, action open world and tactical shooter games from Waywe Gaming. Each of the titles provides its own set of setting, style of gameplay, and challenge, from tense 2D detection to immersive 3D worlds."
         />
         <section className="mx-auto max-w-7xl px-6 py-16 sm:px-10 lg:px-12">
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -20,7 +23,7 @@ export default function Games() {
                     <div className="flex w-full flex-col">
                         <div className="relative h-44 overflow-hidden border-b border-primary sm:h-48">
                         <img
-                            src={game.image}
+                            src={resolveGameAsset(game.image)}
                             alt={game.title}
                             className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
                         />
@@ -60,9 +63,13 @@ export default function Games() {
                                 title={`Search Google Play for ${game.title}`}
                                 className="transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
                             >
-                                <i className="fab fa-android" aria-hidden="true" />
+                                 <img
+                                    src={androidIcon}
+                                    alt=""
+                                    className="invert dark:invert-0"
+                                />
                             </a>
-                            <span className="h-4 w-px bg-gray-400 dark:bg-white/45" />
+                            {/* <span className="h-4 w-px bg-gray-400 dark:bg-white/45" />
                             <a
                                 href={game.iosUrl}
                                 target="_blank"
@@ -72,7 +79,7 @@ export default function Games() {
                                 className="transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
                             >
                                 <i className="fab fa-apple" aria-hidden="true" />
-                            </a>
+                            </a> */}
                             </div>
                         </div>
                         </div>
@@ -84,14 +91,15 @@ export default function Games() {
             </section>
 
       <CallToAction
-        imagePath="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=2000&q=85"
-        heading={<>Ready to build the next <span className="text-primary-dark">world?</span></>}
-        description="Let&apos;s create a game experience players will remember."
-        buttonLabel="Get Consultation"
+        imagePath={ctaImage}
+        heading={<>Ready to Find Your Next <span className="text-primary-dark">Game?</span></>}
+        description="Step into worlds built around action, suspense, survival, and strategy. Explore the Waywe Gaming lineup and choose the experience that matches how you want to play."
+        buttonLabel="Explore Our Games"
         buttonHref="/contact"
       />
     </div>
   );
 }
+
 
 

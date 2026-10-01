@@ -1,10 +1,13 @@
+import blackLogo from '../assets/heroimage/black-logo.png';
+import logo from '../assets/heroimage/logo.png';
+
 export default function Logo({ size = 48, variant = 'navbar' }) {
   const width = variant === 'footer' ? size * 2.4 : size * 2.7;
 
   return (
     <>
       <img
-        src="/heroimage/black-logo.png"
+        src={blackLogo}
         alt="Wayve Gaming"
         width={width}
         height={size}
@@ -13,7 +16,7 @@ export default function Logo({ size = 48, variant = 'navbar' }) {
         draggable="false"
       />
       <img
-        src="/heroimage/logo.png"
+        src={logo}
         alt=""
         aria-hidden="true"
         width={width}

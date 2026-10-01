@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import PageHero from '../components/PageHero';
 import { addStoredItem, createClientSubmission, readJsonResponse, productionApiMessage } from '../utils/api';
+import careerHero from '../assets/extras/career-hero.webp'
 
 const STEPS = ['Role', 'About You', 'Experience', 'Review'];
 const INITIAL_FORM = {
@@ -66,7 +67,7 @@ export default function CareersPage() {
   return (
     <div className="bg-white dark:bg-black">
       <PageHero
-        imagePath="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=2000&q=85"
+        imagePath={careerHero}
         pageName="Careers"
         heading={<>Build the next <span className="text-primary-dark">big thing.</span></>}
         description="Bring your ideas, craft, and curiosity to a team making games players remember."

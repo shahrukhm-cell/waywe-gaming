@@ -7,12 +7,10 @@ export default function FaqList({ items }) {
     <section className="bg-white px-6 py-16 text-gray-900 dark:bg-black dark:text-white sm:px-10 lg:px-12">
       <div className="mx-auto max-w-7xl">
         <h2 className="font-gaming text-3xl text-gray-900 dark:text-white sm:text-5xl">
-          <span className="text-primary-dark">Frequently</span> Answer Questions
+          <span className="text-primary-dark">Questions About </span> Waywe Gaming
         </h2>
         <p className="mt-3 max-w-4xl text-md leading-relaxed text-gray-900 dark:text-gray-100">
-          We&apos;re a passionate team of game developers, designers, and storytellers on a mission
-          to craft unforgettable gaming experiences. From concept to launch, every pixel and
-          mechanic is built with heart, precision, and play in mind.
+          Learn more about us, the types of games we create, our development experience, and how we approach each project. These answers cover the questions players, partners, and future team members may want to know clearly.
         </p>
 
         <div className="mt-7 space-y-4">

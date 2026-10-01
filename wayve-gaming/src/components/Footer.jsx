@@ -5,8 +5,18 @@ const LINKS = [
   { label: 'Home', href: '/' },
   { label: 'About Us', href: '/about' },
   { label: 'Games', href: '/games' },
-  { label: 'Careers', href: '#careers' },
+  { label: 'Careers', href: '/careers' },
   { label: 'Contact', href: '/contact' },
+];
+
+const SOCIAL_LINKS = [
+  { name: 'Facebook', icon: 'fa-facebook-f', href: 'https://www.facebook.com/waywegaming' },
+  { name: 'YouTube', icon: 'fa-youtube', href: 'https://www.youtube.com/@waywegaming/videos' },
+  {
+    name: 'LinkedIn',
+    icon: 'fa-linkedin-in',
+    href: 'https://www.linkedin.com/company/waywegaming/home/',
+  },
 ];
 
 export default function Footer() {
@@ -46,11 +56,13 @@ export default function Footer() {
           </nav>
 
           <div className="flex items-center gap-3">
-            {['fa-linkedin-in', 'fa-facebook-f', 'fa-instagram', 'fa-x-twitter'].map((icon) => (
+            {SOCIAL_LINKS.map(({ name, icon, href }) => (
               <a
-                key={icon}
-                href="#"
-                aria-label={icon.replace('fa-', '').replaceAll('-', ' ')}
+                key={name}
+                href={href}
+                aria-label={name}
+                target="_blank"
+                rel="noreferrer"
                 className="flex h-7 w-7 items-center justify-center rounded-full bg-blue-600 text-white transition hover:bg-primary"
               >
                 <i className={`fab ${icon} text-[11px]`} />

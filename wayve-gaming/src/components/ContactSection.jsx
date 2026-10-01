@@ -5,14 +5,14 @@ import { addStoredItem, createClientSubmission, readJsonResponse, productionApiM
 const DETAILS = [
   { icon: 'fa-envelope', text: 'info@waywegaming.com' },
   { icon: 'fa-phone', text: '(800) 659-0691' },
-  { icon: 'fa-map-marker-alt', text: '932 Ditmas Ave, Brooklyn, NY 11218' },
+  { icon: 'fa-map-marker-alt', text: 'USA Office: 932 Ditmas Ave, Brooklyn, NY 11218' },
   {
     icon: 'fa-map-marker-alt',
-    text: '857 Street 12, Block B Police Foundation,\nIslamabad, Pakistan',
+    text: 'Lahore Office: F105 Block F1, Johar Town, Lahore, Pakistan',
   },
   {
     icon: 'fa-map-marker-alt',
-    text: '857 Street 12, Block B Police Foundation,\nIslamabad, Pakistan',
+    text: 'Islamabad Office: 857 Street 12, Block B Police Foundation, Islamabad, Pakistan',
   },
 ];
 
@@ -67,14 +67,13 @@ export default function ContactSection() {
                 <p className="whitespace-nowrap text-xs uppercase tracking-wide text-gray-700 dark:text-gray-200">Get In Touch</p>
                 <div className="h-px max-w-xs flex-1 bg-gray-300 dark:bg-gray-600" />
               </div>
-              <h2 className="max-w-xl font-gaming text-4xl font-black leading-[1.05] sm:text-5xl">
-                Let&apos;s <span className="text-primary-dark">Create</span>
-                <br />
-                <span className="text-primary-dark">Something</span> Amazing
+              <h2 className="max-w-xl font-gaming text-4xl font-black leading-[1.05] sm:text-4xl">
+                Let&apos;s <span className="text-primary-dark">Talk  </span>
+                 
+                <span className="text-primary-dark">Games</span> and Big Ideas
               </h2>
               <p className="mt-6 max-w-md text-sm leading-relaxed text-gray-600 dark:text-gray-400">
-                We&apos;re a passionate team of game developers, designers, and storytellers on a
-                mission to craft unforgettable gaming experiences.
+               Questions about our games, careers, partnerships, or studio? Send us a message and connect directly with the Waywe Gaming team.
               </p>
 
               <div className="mt-7 space-y-4">
@@ -88,8 +87,11 @@ export default function ContactSection() {
             </div>
           </Reveal>
 
-          <Reveal delay={150}>
-            <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <Reveal
+            delay={150}
+            className="flex min-h-full items-center lg:justify-center"
+          >
+            <form onSubmit={handleSubmit} className="grid w-full lg:max-w-2xl grid-cols-1 gap-3 sm:grid-cols-2">
               <input
                 type="text"
                 name="name"
@@ -97,7 +99,7 @@ export default function ContactSection() {
                 value={form.name}
                 onChange={handleChange}
                 placeholder="Full Name"
-                className="rounded-lg border border-gray-300 bg-white/50 px-4 py-3 text-xs text-gray-900 placeholder-gray-500 transition focus:border-primary focus:outline-none dark:border-gray-500 dark:bg-white/10 dark:text-white dark:placeholder-gray-300 sm:focus:border-sky-500"
+                className="rounded-lg border border-gray-300 bg-white/50 px-4 py-3  text-md text-gray-900 placeholder-gray-500 transition focus:border-primary focus:outline-none dark:border-gray-500 dark:bg-white/10 dark:text-white dark:placeholder-gray-300  my-1 "
               />
               <input
                 type="email"
@@ -106,14 +108,14 @@ export default function ContactSection() {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="Email Address"
-                className="rounded-lg border border-gray-300 bg-white/50 px-4 py-3 text-xs text-gray-900 placeholder-gray-500 transition focus:border-primary focus:outline-none dark:border-gray-500 dark:bg-white/10 dark:text-white dark:placeholder-gray-300 sm:focus:border-sky-500"
+                className="rounded-lg border border-gray-300 bg-white/50 px-4 py-3  text-md text-gray-900 placeholder-gray-500 transition focus:border-primary focus:outline-none dark:border-gray-500 dark:bg-white/10 dark:text-white dark:placeholder-gray-300 my-1"
               />
               <select
                 name="country"
                 required
                 value={form.country}
                 onChange={handleChange}
-                className="rounded-lg border border-gray-300 bg-white/50 px-4 py-3 text-xs text-gray-700 focus:border-primary focus:outline-none dark:border-gray-500 dark:bg-white/10 dark:text-white"
+                className="rounded-lg border border-gray-300 bg-white/50 px-4 py-3 text-md text-gray-700 focus:border-primary focus:outline-none dark:border-gray-500 dark:bg-white/10 dark:text-white my-1"
               >
                 <option value="" className="dark:bg-gray-800 dark:text-white">Country</option>
                 <option value="United States" className="dark:bg-gray-800 dark:text-white">United States</option>
@@ -127,7 +129,7 @@ export default function ContactSection() {
                 value={form.phone}
                 onChange={handleChange}
                 placeholder="Phone Number"
-                className="rounded-lg border border-gray-300 bg-white/50 px-4 py-3 text-xs text-gray-900 placeholder-gray-500 transition focus:border-primary focus:outline-none dark:border-gray-500 dark:bg-white/10 dark:text-white dark:placeholder-gray-300 sm:focus:border-sky-500"
+                className="rounded-lg border border-gray-300 bg-white/50 px-4 py-3 text-md text-gray-900 placeholder-gray-500 transition focus:border-primary focus:outline-none dark:border-gray-500 dark:bg-white/10 dark:text-white dark:placeholder-gray-300 my-1"
               />
               <textarea
                 rows={6}
@@ -136,7 +138,7 @@ export default function ContactSection() {
                 value={form.message}
                 onChange={handleChange}
                 placeholder="Your Message"
-                className="resize-none rounded-lg border border-gray-300 bg-white/50 px-4 py-3 text-xs text-gray-900 placeholder-gray-500 transition focus:border-primary focus:outline-none dark:border-gray-500 dark:bg-white/10 dark:text-white dark:placeholder-gray-300 sm:col-span-2"
+                className="resize-none rounded-lg border border-gray-300 bg-white/50 px-4 py-3 text-md text-gray-900 placeholder-gray-500 transition focus:border-primary focus:outline-none dark:border-gray-500 dark:bg-white/10 dark:text-white dark:placeholder-gray-300 sm:col-span-2 my-1"
               />
               <button
                 type="submit"

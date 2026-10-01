@@ -1,13 +1,25 @@
-import { useEffect, useRef, useState } from 'react';
+﻿import { useEffect, useRef, useState } from 'react';
 import Reveal from '../components/Reveal';
 import ContactSection from '../components/ContactSection';
 import catalog from '../data/games.json';
+import androidIcon from '../assets/extras/android.png';
+import midnightShiftVideo from '../assets/extras/videos/Midnight Shift Doppelganger Game _ Gameplay Trailer Video 01 _ Landscape _ Google Play Store.mp4';
+import grandMafiaVideo from '../assets/extras/videos/Grand Mafia Gangster City Game _ Trailer Video 01 _ Google Play Store.mp4';
+import eddieImage from '../assets/team/eddie.webp';
+import ayeshaImage from '../assets/team/ayesha.webp';
+import ahadImage from '../assets/team/ahad.webp';
+import nomanImage from '../assets/team/noman.webp';
+import { resolveGameAsset } from '../utils/gameAssets';
+import ctaImage from '../assets/cta/cta-image.webp';
+import agentForHireLogo from '../assets/games/agent-for-hire-logo/agent-for-hire-logo.webp';
+import grandMafiaLogo from '../assets/games/agent-for-hire-logo/grand-mafia-logo.webp';
+import midnightShiftLogo from '../assets/games/agent-for-hire-logo/mid-night-shift-logo.webp';
 
 const FEATURES = [
-  { icon: 'fa-gamepad', lines: ['Game', 'Solutions'] },
-  { icon: 'fa-gamepad', lines: ['AI & Game', 'Development'] },
-  { icon: 'fa-users', lines: ['Multiplayer', 'Gaming'] },
-  { icon: 'fa-server', lines: ['Live Game', 'Operations'] },
+  { icon: 'fa-gamepad', lines: ['Game', 'Development'] },
+  { icon: 'fa-gamepad', lines: ['2D & 3D', 'Experiences'] },
+  { icon: 'fa-users', lines: ['Mobile Game', 'Publishing'] },
+  { icon: 'fa-server', lines: ['Player-First ', 'Design'] },
 ];
 
 function Hero() {
@@ -38,7 +50,7 @@ function Hero() {
 
     const tryPlay = (video) => {
       video.muted = true;
-      video.play().catch(() => {});
+      video.play().catch(() => { });
     };
 
     const update = () => {
@@ -113,22 +125,20 @@ function Hero() {
         <div className="hero-content">
           <div className="hero-text">
             <div className="reveal-step" data-step="0">
-              <span className="eyebrow">- PREMIUM CARE FOR EVERY FIBER</span>
+              <span className="eyebrow">- PREMIUM GAMES. DISTINCT WORLDS.</span>
               <h1>
-                Enterprise IT Solutions For{' '}
-                <span className="highlight">Modern Businesses</span>
+                Game Studio Creating Original {' '}
+                <span className="highlight"> 2D and 3D Games</span>
               </h1>
             </div>
             <div className="reveal-step" data-step="1">
               <p className="text-white">
-                Empowering Organizations With Secure Cloud Infrastructure,
-                AI-Driven Innovation, Cybersecurity, And Custom Software
-                Development.
+                Waywe Gaming is a game development studio creating 2D and 3D horror, action, survival, simulation, and shooter games for players.
               </p>
             </div>
             <div className="reveal-step" data-step="2">
               <div className="buttons">
-                <a href="/contact" className="btn-primary px-3 py-2">Get Consultation</a>
+                <a href="/games" className="btn-primary px-3 py-2">Explore Our Games</a>
                 <a href="/contact" className="btn-secondary px-3 py-2 text-white">Contact Us</a>
               </div>
             </div>
@@ -147,7 +157,7 @@ function Hero() {
       <section className="panel panel-video panel-1">
         <div className="panel__bg">
           <video className="panel__video" autoPlay muted loop playsInline preload="auto" poster="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1920&q=80">
-            <source src="/videos/Midnight%20Shift%20Doppelganger%20Game%20_%20Gameplay%20Trailer%20Video%2001%20_%20Landscape%20_%20Google%20Play%20Store.mp4" type="video/mp4" />
+            <source src={midnightShiftVideo} type="video/mp4" />
           </video>
         </div>
         <div className="panel__dim" />
@@ -156,7 +166,7 @@ function Hero() {
       <section className="panel panel-video panel-2">
         <div className="panel__bg">
           <video className="panel__video" autoPlay muted loop playsInline preload="auto" poster="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1920&q=80">
-            <source src="/videos/Grand%20Mafia%20Gangster%20City%20Game%20_%20Trailer%20Video%2001%20_%20Google%20Play%20Store.mp4" type="video/mp4" />
+            <source src={grandMafiaVideo} type="video/mp4" />
           </video>
         </div>
         <div className="panel__dim" />
@@ -168,33 +178,33 @@ function Hero() {
 }
 
 const AVATARS = [
-  'https://i.pravatar.cc/100?img=11',
-  'https://i.pravatar.cc/100?img=12',
-  'https://i.pravatar.cc/100?img=13',
+  agentForHireLogo,
+  grandMafiaLogo,
+  midnightShiftLogo,
 ];
 
 const STATS = [
-  { icon: 'fa-briefcase', value: '05+', label: 'Products Built' },
-  { icon: 'fa-users', value: '100K+', label: 'Players Engaged' },
-  { icon: 'fa-globe', value: '15+', label: 'Markets Reached' },
-  { icon: 'fa-headset', value: '24/7', label: 'Player Experience' },
+  { icon: 'fa-briefcase', value: '5', label: 'Featured Games' },
+  { icon: 'fa-globe', value: '261K+', label: 'Combined Downloads' },
+  { icon: 'fa-headset', value: '2D+3D', label: 'Game Development' },
+  { icon: 'fa-users', value: '5', label: 'Game Genres' },
 ];
 
 function Stats() {
   return (
     <section className=" relative mt-20 z-20 px-4 sm:px-6 lg:px-8 md:-mt-10 "  >
       <div className="mx-auto max-w-7xl bg-dark">
-        <div className="stats-card rounded-3xl bg-white p-8 shadow-xl dark:bg-black md:p-12">
+        <div className="stats-card rounded-3xl bg-white p-7 shadow-xl dark:bg-black md:p-6">
           <div className="grid items-start gap-8 lg:grid-cols-5">
             <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8 dark:lg:border-gray-700">
-              <div className="mb-4 h-1 w-16 bg-primary" />
+              <div className="mb-2 h-1 w-16 bg-primary" />
               <h3 className="mb-2 text-2xl font-bold leading-tight">
-                BUILT FOR PLAYERS.
+                BUILT FOR PLAYERS
                 <br />
                 <span className="text-primary">DESIGNED TO LAST.</span>
               </h3>
-              <p className="mb-6 text-md leading-relaxed text-gray-600 dark:text-white">
-                Building engaging gaming products for players worldwide.
+              <p className="mb-2 text-md leading-relaxed text-gray-600 dark:text-white">
+                Creating games built to engage players around the world.
               </p>
               <div className="flex items-center gap-3">
                 <div className="flex -space-x-3">
@@ -206,8 +216,8 @@ function Stats() {
                   </div>
                 </div>
                 <div>
-                  <span className="text-lg font-bold text-gray-900 dark:text-white">25+</span>
-                  <p className="text-xs text-gray-600 dark:text-gray-100">Game Install</p>
+                  <span className="text-lg font-bold text-gray-900 dark:text-white">9+</span>
+                  <p className="text-xs text-gray-600 dark:text-gray-100">Years of Experience</p>
                 </div>
               </div>
             </div>
@@ -259,7 +269,7 @@ function FeaturedGames() {
               <article className="group flex h-full min-h-[300px] overflow-hidden rounded-xl border border-primary bg-white text-gray-950 shadow-[0_0_0_1px_rgba(255,126,0,0.16)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_16px_36px_-18px_rgba(255,126,0,0.35)] dark:bg-black dark:text-white dark:hover:shadow-[0_16px_36px_-18px_rgba(255,126,0,0.85)]">
                 <div className="flex w-full flex-col">
                   <div className="relative h-44 overflow-hidden border-b border-primary sm:h-48">
-                    <img src={game.image} alt={game.title} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
+                    <img src={resolveGameAsset(game.image)} alt={game.title} className="h-full w-full object-cover transition duration-500 group-hover:scale-105" />
                   </div>
                   <div className="flex min-h-[124px] flex-1 flex-col bg-white p-4 dark:bg-black">
                     <div>
@@ -286,9 +296,14 @@ function FeaturedGames() {
                           title={`Search Google Play for ${game.title}`}
                           className="transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
                         >
-                          <i className="fab fa-android" aria-hidden="true" />
+                          {/* <i className="fab fa-android" aria-hidden="true" /> */}
+                          <img
+                            src={androidIcon}
+                            alt=""
+                            className="invert dark:invert-0"
+                          />
                         </a>
-                        <span className="h-4 w-px bg-gray-400 dark:bg-white/45" />
+                        {/* <span className="h-4 w-px bg-gray-400 dark:bg-white/45" />
                         <a
                           href={game.iosUrl}
                           target="_blank"
@@ -298,7 +313,7 @@ function FeaturedGames() {
                           className="transition-colors hover:text-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary"
                         >
                           <i className="fab fa-apple" aria-hidden="true" />
-                        </a>
+                        </a> */}
                       </div>
                     </div>
                   </div>
@@ -323,12 +338,14 @@ function OurMission() {
               <div className="h-px flex-1 bg-gray-300 dark:bg-gray-700" />
             </div>
           </div>
-          <h2 className="mb-10 font-gaming text-4xl font-black leading-none text-gray-900 dark:text-white sm:text-5xl">
-            <span>From </span> <span className="text-primary-dark">concept to live apps,</span>{' '}<span>one studio.</span>
+          <h2 className="mb-3 font-gaming text-4xl font-black leading-none text-gray-900 dark:text-white sm:text-5xl">
+            <span>From </span> <span className="text-primary-dark">Game Ideas to Launch,</span>{' '}<span>One Studio.</span>
           </h2>
         </Reveal>
         <div className="">
-          <p>We're a passionate team of game developers, designers, and storytellers on a mission to craft unforgettable gaming experiences. From concept to launch, every pixel and mechanic is built with heart, precision, and play in mind. We're a passionate team of game developers, designers, and storytellers on a mission to craft unforgettable gaming experiences. From concept to launch, every pixel and mechanic is built with heart, precision, and play in mind. We're a passionate team of game developers, designers, and storytellers on a mission to craft unforgettable gaming experiences. From concept to launch, every pixel and mechanic is built with heart, precision, and play in mind. We're a passionate team of game developers, designers, and storytellers on a mission to craft unforgettable gaming experiences. From concept to launch, every pixel and mechanic is built with heart, precision, and play in mind. We're a passionate team of game developers, designers, and storytellers on a mission to craft unforgettable gaming experiences. From concept to launch, every pixel and mechanic is built with heart, precision, and play in mind. We're a passionate team of game developers.</p>
+          <p>Waywe Gaming is a game development studio built around one simple idea: every game should give players a clear reason to keep playing. With 9+ years of experience, our team works across 2D and 3D development, creating horror, action, survival, simulation, and shooter experiences with their own identity. Our current lineup includes Grand Mafia Gangster City Game, Agent For Hire: Suit Shooter, Doppelganger or Neighbor Game, Midnight Shift: Doppelganger, and Last Survivor Left: Zombie War. Each title starts with its own gameplay goal instead of being pushed through the same formula. We shape mechanics, controls, pacing, art direction, environments, and progression around the experience the game needs. </p>
+          <p>That might mean careful inspection and suspense in a retro 2D horror game, open-world driving and combat in a 3D crime game, or resource gathering and survival against zombie threats. From early concepts to playable builds and ongoing improvements, our team keeps the player experience at the center while giving every project room to become something distinct. We test ideas, refine what works, and keep learning from each release so the next build feels more focused.</p>
+          <a href="/about" className='btn-primary p-3 mt-7'>Learn More About Us</a>
         </div>
       </div>
     </section>
@@ -336,10 +353,10 @@ function OurMission() {
 }
 
 const TEAM = [
-  { name: 'Eddie Sankari', role: 'CEO & Founder',     image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&h=500', linkedin: '#' },
-  { name: 'Ayesha Mazhar', role: 'General Manager',   image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&h=500', linkedin: '#' },
-  { name: 'Abdul Ahad',    role: 'Assistant Manager', image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&h=500', linkedin: '#' },
-  { name: 'Numan Ali',     role: 'Project Manager',   image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&h=500', linkedin: '#' },
+  { name: 'Eddie Sankari', role: 'CEO & Founder', image: eddieImage, linkedin: 'https://www.linkedin.com/in/waywegaming/' },
+  { name: 'Ayesha Mazhar', role: 'General Manager', image: ayeshaImage, linkedin: 'https://www.linkedin.com/in/ayesha-mazhar-179a61240/?isSelfProfile=true' },
+  { name: 'Abdul Ahad', role: 'Assistant Manager', image: ahadImage, linkedin: 'https://www.linkedin.com/in/imabdulahad/' },
+  { name: 'Numan Ali', role: 'Project Manager', image: nomanImage, linkedin: 'https://www.linkedin.com/in/noman-ali-5b0a03104/' },
 ];
 
 function Team() {
@@ -366,7 +383,7 @@ function Team() {
               <article className="group">
 
                 {/* ============ Image card ============ */}
-                <div className="relative overflow-hidden rounded-2xl border-2 border-primary">
+                <div className="relative overflow-hidden rounded-3xl border-2 border-primary">
 
                   {/* Photo */}
                   <img
@@ -375,32 +392,17 @@ function Team() {
                     className="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105 sm:h-72"
                   />
 
-                  {/* ---------- Orange tint — appears on hover ---------- */}
+                  {/* ---------- Orange tint â€” appears on hover ---------- */}
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-orange-700/90 via-orange-600/65 to-orange-500/45 opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
                   {/* Dark bottom fade for legibility */}
                   <div className="pointer-events-none absolute inset-x-0 bottom-0 h-20 bg-gradient-to-t from-black/65 to-transparent" />
 
-                  {/* ---------- Social icons — top right ---------- */}
+                  {/* ---------- Social icons â€” top right ---------- */}
                   <div className="absolute right-3 top-3 flex flex-col gap-1.5">
                     <a
                       href={member.linkedin}
                       aria-label={`${member.name} on LinkedIn`}
-                      className="flex h-7 w-7 -translate-y-1 items-center justify-center rounded-full bg-blue-600 text-white opacity-0 shadow-md transition-all duration-500 hover:bg-primary group-hover:translate-y-0 group-hover:opacity-100"
-                    >
-                      <i className="fab fa-linkedin-in text-[11px]" />
-                    </a>
-                    <a
-                      href={member.linkedin}
-                      aria-label={`${member.name} portfolio`}
-                      className="flex h-7 w-7 -translate-y-1 items-center justify-center rounded-full bg-blue-600 text-white opacity-0 shadow-md transition-all duration-500 hover:bg-primary group-hover:translate-y-0 group-hover:opacity-100"
-                    >
-                      <i className="fab fa-linkedin-in text-[11px]" />
-                    </a>
-                    {/* third icon slides in on hover */}
-                    <a
-                      href={member.linkedin}
-                      aria-label={`${member.name} featured profile`}
                       className="flex h-7 w-7 -translate-y-1 items-center justify-center rounded-full bg-blue-600 text-white opacity-0 shadow-md transition-all duration-500 hover:bg-primary group-hover:translate-y-0 group-hover:opacity-100"
                     >
                       <i className="fab fa-linkedin-in text-[11px]" />
@@ -428,10 +430,10 @@ function Team() {
 }
 
 const JOBS = [
-  { title: 'Game Developer', meta: 'Full Time • Remote / On-site', highlight: true },
-  { title: 'Game Designer', meta: 'Full Time • Remote / On-site', highlight: false },
-  { title: '3D Artist', meta: 'Full Time • Remote / On-site', highlight: false },
-  { title: 'Project Manager', meta: 'Full Time • Remote / On-site', highlight: false },
+  { title: 'Game Developer (Unreal Engine)', meta: 'Full Time â€¢ Remote / On-site', highlight: true },
+  { title: '3D Artist (Environment)', meta: 'Full Time â€¢ Remote / On-site', highlight: false },
+  { title: 'UI/UX Designer', meta: 'Full Time â€¢ Remote / On-site', highlight: false },
+  // { title: 'Project Manager', meta: 'Full Time â€¢ Remote / On-site', highlight: false },
 ];
 
 function Careers() {
@@ -448,49 +450,51 @@ function Careers() {
 
   return (
     <section id="careers" className="bg-white py-20 dark:bg-black md:py-24">
-        <Reveal>
-          <div className="relative overflow-hidden bg-cover bg-center px-6 py-10 md:px-10 lg:px-12" style={{ backgroundImage: "linear-gradient(90deg, rgba(0, 0, 0, .92), rgba(0, 0, 0, .62)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1800&q=80')" }}>
-            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative grid items-center gap-10 lg:grid-cols-[1fr_360px]">
-              <div className="max-w-xl">
-                <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-white">Join Our Team</p>
-                <h2 className="font-gaming text-4xl font-black leading-none text-white sm:text-5xl">
-                  Build Your <span className="text-primary-dark">Next</span>
-                  <br />Big Chapter.
-                </h2>
-                <p className="mt-6 max-w-lg text-sm leading-relaxed text-gray-300">
-                  Empowering organizations with secure cloud infrastructure, AI-driven innovation,
-                  cybersecurity, and custom software development.
-                </p>
-                <a href="/careers" className="btn-primary mt-7 inline-flex rounded-lg px-5 py-3 text-xs font-semibold text-white">View Open Position</a>
+      <Reveal>
+        <div className="relative overflow-hidden bg-cover bg-center px-6 py-10 md:px-10 lg:px-12" style={{
+          backgroundImage: `linear-gradient(90deg, rgba(0,0,0,.5), rgba(0,0,0,.3)), url(${ctaImage})`
+        }}
+        >
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative grid items-center gap-10 lg:grid-cols-[1fr_360px]">
+            <div className="max-w-xl">
+              <p className="mb-4 text-xs font-semibold uppercase tracking-widest text-white">Join Our Team</p>
+              <h2 className="font-gaming text-4xl font-black leading-none text-white sm:text-5xl">
+                Build The <span className="text-primary-dark">Next Game </span>
+                With Us.
+              </h2>
+              <p className="mt-6 max-w-lg text-sm leading-relaxed text-gray-300">
+                Bring your skills to our team and help create 2D and 3D games across horror, action, survival, simulation, and shooters for players everywhere.
+              </p>
+              <a href="/careers" className="btn-primary mt-7 inline-flex rounded-lg px-5 py-3 text-xs font-semibold text-white">View Open Position</a>
+            </div>
+            <div className="rounded-xl border border-primary bg-black/30 p-4 backdrop-blur-sm">
+              <h3 className="mb-4 flex items-center gap-3 text-sm font-semibold text-white">
+                <i className="fas fa-gamepad text-lg text-white" />Current Openings
+              </h3>
+              <div className="divide-y divide-gray-700">
+                {JOBS.map((job, index) => (
+                  <a key={`${job.title}-${index}`} href="/careers" className="flex items-center justify-between gap-3 py-3 text-[10px] text-gray-300 transition hover:text-primary">
+                    <span>{job.title}</span><i className="fas fa-arrow-right text-primary" />
+                  </a>
+                ))}
               </div>
-              <div className="rounded-xl border border-primary bg-black/30 p-4 backdrop-blur-sm">
-                <h3 className="mb-4 flex items-center gap-3 text-sm font-semibold text-white">
-                  <i className="fas fa-gamepad text-lg text-white" />Current Openings
-                </h3>
-                <div className="divide-y divide-gray-700">
-                  {JOBS.map((job, index) => (
-                    <a key={`${job.title}-${index}`} href="/careers" className="flex items-center justify-between gap-3 py-3 text-[10px] text-gray-300 transition hover:text-primary">
-                      <span>{job.title}</span><i className="fas fa-arrow-right text-primary" />
-                    </a>
-                  ))}
-                </div>
-                <a href="/careers" className="mt-3 inline-flex text-[10px] text-primary">View All Jobs <i className="fas fa-arrow-right ml-2" /></a>
-              </div>
+              <a href="/careers" className="mt-3 inline-flex text-[10px] text-primary">View All Jobs <i className="fas fa-arrow-right ml-2" /></a>
             </div>
           </div>
-        </Reveal>
+        </div>
+      </Reveal>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <Reveal>
           <div className="mt-8 rounded-xl border border-primary p-5 bg-black md:p-6">
             <form onSubmit={handleSubscribe} className="flex flex-col items-center gap-5 md:flex-row">
               <div className="flex min-w-0 flex-1 items-center gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center  ">
-                    <i className="fas fa-envelope text-4xl text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm text-gray-200">Get studio updates, jobs alert and more.</h4>
-                    {subscribed && <p className="mt-1 text-xs text-primary">Thanks! You&apos;re subscribed.</p>}
-                  </div>
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center  ">
+                  <i className="fas fa-envelope text-4xl text-primary" />
+                </div>
+                <div>
+                  <h4 className="text-sm text-gray-200">Get studio updates, jobs alert and more.</h4>
+                  {subscribed && <p className="mt-1 text-xs text-primary">Thanks! You&apos;re subscribed.</p>}
+                </div>
               </div>
               <div className='flex gap-3 '>
 
@@ -518,6 +522,7 @@ export default function Home() {
     </>
   );
 }
+
 
 
 

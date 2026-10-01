@@ -1,236 +1,749 @@
 {
   "games": [
     {
-      "slug": "shadow-protocols",
-      "title": "Shadow Protocolassa",
-      "genre": "Action RPG",
+      "slug": "grand-mafia-gangster-city-game",
+      "title": "Grand Mafia Gangster City Game",
+      "genre": "Action",
       "tags": [
         "Action",
-        "RPG",
-        "Multiplayer"
+        "Open World",
+        "3D"
       ],
-      "image": "https://picsum.photos/id/1/1200/700",
-      "androidUrl": "https://play.google.com/store/search?q=Shadow%20Protocol&c=apps",
-      "iosUrl": "https://apps.apple.com/us/search?term=Shadow%20Protocol",
-      "description": "A tactical multiplayer action RPG built around squad strategy, high-stakes missions, and a living world.",
+      "developer": "WayWe Gaming",
+      "publisher": "WayWe Gaming",
+      "releaseDate": "April 15, 2026",
+      "updatedOn": "September 24, 2026",
+      "image": "/assets/games/card/grand-mafia-card.webp",
+      "bannerImage": "/assets/games/grand-mafia-hero.webp",
+      "aboutImage": "/assets/games/about-game/grand-mafia-about.webp",
+      "androidUrl": "https://play.google.com/store/search?q=Grand%20Mafia%20Gangster%20City%20Game&c=apps",
+      "iosUrl": "",
+      "heroSummary": "Enter a massive 3D open-world crime city where you complete dangerous missions, fight rival gangs, escape police, drive powerful vehicles, control territory, and rise through the underworld toward becoming a mafia boss.",
+      "description": "Grand Mafia Gangster City Game is an open-world crime experience built around city exploration, gangster missions, driving, combat, police chases, and mafia progression. Explore skyscrapers, highways, dark alleys, industrial areas, and hidden districts while taking on robberies, shootouts, turf wars, and other story-based missions. Steal and drive supercars, bikes, trucks, armored vehicles, and helicopters, then use pistols, rifles, shotguns, snipers, and explosives against rival gangs. Recruit gang members, expand your territory, earn cash, grow your influence, unlock perks, and build your mafia empire across a detailed 3D city.",
+      "modes": [
+        "Open World",
+        "Gangster Action",
+        "3D"
+      ],
       "screenshots": [
-        "https://picsum.photos/id/10/900/560",
-        "https://picsum.photos/id/11/900/560",
-        "https://picsum.photos/id/12/900/560",
-        "https://picsum.photos/id/25/900/560",
-        "https://picsum.photos/id/26/900/560"
+        "/assets/games/grand-mafia-gangster/image-one.webp",
+        "/assets/games/grand-mafia-gangster/image-two.webp",
+        "/assets/games/grand-mafia-gangster/image-three.webp",
+        "/assets/games/grand-mafia-gangster/image-four.webp",
+        "/assets/games/grand-mafia-gangster/image-five.webp"
       ],
+      "screenshotIntro": "Take a closer look at the open-world city, vehicles, missions, weapons, police pursuits, gang conflicts, and 3D action.",
       "features": [
         {
-          "title": "Intense Combat",
-          "description": "Fast, tactical gunplay with destructible cover and reactive enemy AI that adapts to your squad."
+          "title": "Open World City",
+          "description": "Roam freely through a detailed gangster city filled with skyscrapers, highways, dark alleys, industrial areas, and hidden districts. Explore different parts of the open world while discovering missions, challenges, secrets, and criminal activity across the city."
         },
         {
-          "title": "Live Seasons",
-          "description": "New maps, modes, and rewards every season — free for all players, forever."
+          "title": "Crime Missions",
+          "description": "Take on story-based missions involving robberies, car chases, shootouts, turf wars, rival gangs, and police escapes. Each challenge pushes your progression forward as you build influence and work your way toward becoming a powerful mafia boss."
         },
         {
-          "title": "Cross-Platform",
-          "description": "Play with friends across PC, console, and cloud with a single shared account."
+          "title": "Cars and Combat",
+          "description": "Steal and drive supercars, bikes, trucks, armored vehicles, and helicopters. Race, drift, perform stunts, and escape police pursuits while using pistols, rifles, shotguns, sniper weapons, explosives, and other weapons during third-person combat."
         },
         {
-          "title": "Squad Strategy",
-          "description": "Command a squad of specialists, each with unique abilities and upgrade paths."
+          "title": "Mafia Empire",
+          "description": "Recruit gang members, expand your territory, control crime zones, earn cash, grow your influence, and unlock powerful perks. Gang wars and territory control form part of your rise through the mafia ranks as your criminal empire spreads across the city."
         }
       ],
+      "deviceRequirements": [
+        {
+          "title": "Android Requirements",
+          "items": [
+            [
+              "OS",
+              "Android 8.0 and up"
+            ],
+            [
+              "Version",
+              "1.1.2"
+            ],
+            [
+              "Compatibility",
+              "Works on supported Android devices"
+            ],
+            [
+              "Storage",
+              "188 MB download size"
+            ],
+            [
+              "Interactive Elements",
+              "In-Game Purchases"
+            ]
+          ]
+        }
+      ],
+      "details": [
+        [
+          "Rating",
+          "2.6 star"
+        ],
+        [
+          "Reviews",
+          "40 reviews"
+        ],
+        [
+          "Downloads",
+          "100,000+ downloads"
+        ],
+        [
+          "Price",
+          "Free"
+        ],
+        [
+          "Updated On",
+          "September 24, 2026"
+        ],
+        [
+          "Content Rating",
+          "Rated for 16+ - Strong Violence"
+        ],
+        [
+          "Contains Ads",
+          "Yes"
+        ]
+      ],
+      "cta": {
+        "heading": "Ready to Rule the City?",
+        "description": "Explore the open world, take on dangerous missions, steal and drive vehicles, fight rival gangs, escape police pursuits, control territory, and build your mafia empire.",
+        "buttonLabel": "Play Now"
+      },
+      "relatedSlugs": [
+        "agent-for-hire-suit-shooter",
+        "doppelganger-or-neighbor-game",
+        "midnight-shift-doppelganger"
+      ],
       "requirements": {
-        "platform": "PC, Console",
-        "players": "1-4 players",
-        "release": "Coming soon",
+        "platform": "Android",
+        "players": "Single player",
+        "release": "April 15, 2026",
         "minimum": {
-          "os": "Windows 10 (64-Bit)",
-          "processor": "Intel Core i5-6600K / AMD FX 5820",
-          "memory": "8 GB RAM",
-          "graphics": "NVIDIA GTX 1060 / AMD RX 5820",
-          "storage": "50 GB Available Space"
+          "os": "Android 8.0 and up",
+          "processor": "Supported Android device",
+          "memory": "Device dependent",
+          "graphics": "Supported Android GPU",
+          "storage": "188 MB download size"
         },
         "recommended": {
-          "os": "Windows 11 (64-Bit)",
-          "processor": "Intel Core i7-9700K / AMD Ryzen 7 3700X",
-          "memory": "16 GB RAM",
-          "graphics": "NVIDIA RTX 2060 / AMD RX 5700 XT",
-          "storage": "50 GB SSD"
+          "os": "Latest supported Android version",
+          "processor": "Modern Android device",
+          "memory": "Device dependent",
+          "graphics": "Modern Android GPU",
+          "storage": "188 MB download size"
         }
-      }
+      },
+      "windowsUrl": "https://play.google.com/googleplaygames"
     },
     {
-      "slug": "midnight-shift",
-      "title": "Midnight Shift",
-      "genre": "Psychological Horror",
+      "slug": "agent-for-hire-suit-shooter",
+      "title": "Agent For Hire: Suit Shooter",
+      "genre": "Game Action",
+      "tags": [
+        "Action",
+        "Tactical Shooter",
+        "3D"
+      ],
+      "developer": "WayWe Gaming",
+      "publisher": "WayWe Gaming",
+      "releaseDate": "",
+      "updatedOn": "November 18, 2025",
+      "image": "/assets/games/card/agent-for-hire-card.webp",
+      "bannerImage": "/assets/games/Agent-for-hire-hero.webp",
+      "aboutImage": "/assets/games/about-game/agent-for-hire-about.webp",
+      "androidUrl": "https://play.google.com/store/search?q=Agent%20For%20Hire%20Suit%20Shooter&c=apps",
+      "iosUrl": "",
+      "heroSummary": "Step into stylish 3D shooter action as an elite agent where fast gunfights, tactical movement, precision, and cinematic chaos shape every mission. Track your targets, strike with purpose, clean up, and suit up.",
+      "description": "Agent For Hire: Suit Shooter puts you in the role of a professional contract killer in a 3D action shooter built around fast gunfights, tactical movement, and stealth. Plan each move, track dangerous targets, strike with precision, and stay unseen when the mission demands it. Take on sniper challenges, PvE encounters, and high-pressure agent hunts while using pistols, rifles, shotguns, and sniper weapons across changing combat situations. Some missions also push you to clean up crime scenes after the action. Timing, aim, positioning, and quick reactions shape how you handle each assignment and survive every intense shootout alive.",
+      "modes": [
+        "Single Player",
+        "Action Shooter",
+        "3D"
+      ],
+      "screenshots": [
+        "/assets/games/agent-for-hire/image-one.webp",
+        "/assets/games/agent-for-hire/image-two.webp",
+        "/assets/games/agent-for-hire/image-three.webp",
+        "/assets/games/agent-for-hire/image-four.webp",
+        "/assets/games/agent-for-hire/image-five.webp"
+      ],
+      "screenshotIntro": "Take a closer look at the missions, environments, weapons, targets, stealth moments, and 3D shooter action.",
+      "features": [
+        {
+          "title": "Tactical Movement",
+          "description": "Approach encounters with timing, positioning, and controlled movement rather than relying only on direct firepower. The tactical shooter gameplay gives you room to plan how you enter a fight, react to threats, and move through each dangerous assignment."
+        },
+        {
+          "title": "Stealth Missions",
+          "description": "Stay unseen when the situation allows, eliminate targets carefully, and clean up crime scenes as part of the mission flow. The stealth game elements reward patience and precision as you strike, reposition, and avoid unnecessary exposure."
+        },
+        {
+          "title": "Weapon Variety",
+          "description": "Use pistols, rifles, shotguns, and sniper weapons across different combat situations. Close-range shotgun action, handgun precision, and sniper shooter challenges give you different ways to handle enemies depending on the mission and distance."
+        },
+        {
+          "title": "Agent Hunts",
+          "description": "Take on assassination missions, hunt dangerous targets, survive waves of enemies, and push through high-stakes operations. Spy agent game elements combine with PvE shooting and target tracking as every assignment demands accuracy, timing, and quick decisions."
+        }
+      ],
+      "deviceRequirements": [
+        {
+          "title": "Android Requirements",
+          "items": [
+            [
+              "OS",
+              "Android 7.1 and up"
+            ],
+            [
+              "Version",
+              "1.1.0"
+            ],
+            [
+              "Compatibility",
+              "Works on Samsung SM-A166U"
+            ],
+            [
+              "Storage",
+              "137 MB download size"
+            ],
+            [
+              "Interactive Elements",
+              "In-Game Purchases"
+            ]
+          ]
+        }
+      ],
+      "details": [
+        [
+          "Category",
+          "Game Action"
+        ],
+        [
+          "Downloads",
+          "1,000+ downloads"
+        ],
+        [
+          "Content Rating",
+          "Rated for 16+ - Strong Violence"
+        ],
+        [
+          "Price",
+          "Free"
+        ],
+        [
+          "Contains Ads",
+          "Yes"
+        ],
+        [
+          "Updated On",
+          "November 18, 2025"
+        ]
+      ],
+      "cta": {
+        "heading": "Ready to Take the Contract?",
+        "description": "Suit up, enter the mission, track your target, and prove your precision across tactical assignments built around stealth and shooter action.",
+        "buttonLabel": "Play Now"
+      },
+      "relatedSlugs": [
+        "grand-mafia-gangster-city-game",
+        "doppelganger-or-neighbor-game",
+        "last-survivor-left-zombie-war"
+      ],
+      "requirements": {
+        "platform": "Android",
+        "players": "Single player",
+        "release": "November 18, 2025",
+        "minimum": {
+          "os": "Android 7.1 and up",
+          "processor": "Supported Android device",
+          "memory": "Device dependent",
+          "graphics": "Supported Android GPU",
+          "storage": "137 MB download size"
+        },
+        "recommended": {
+          "os": "Latest supported Android version",
+          "processor": "Samsung SM-A166U or comparable",
+          "memory": "Device dependent",
+          "graphics": "Modern Android GPU",
+          "storage": "137 MB download size"
+        }
+      },
+      "windowsUrl": "https://play.google.com/googleplaygames"
+    },
+    {
+      "slug": "doppelganger-or-neighbor-game",
+      "title": "Doppelganger or Neighbor Game",
+      "genre": "Game Simulation",
       "tags": [
         "Horror",
-        "Adventure",
-        "Story"
+        "Detection",
+        "2D"
       ],
-      "image": "https://picsum.photos/id/13/1200/700",
-      "androidUrl": "https://play.google.com/store/search?q=Midnight%20Shift&c=apps",
-      "iosUrl": "https://apps.apple.com/us/search?term=Midnight%20Shift",
-      "description": "Uncover the truth behind a strange night shift where every identity may be hiding a darker story.",
+      "developer": "WayWe Gaming",
+      "publisher": "WayWe Gaming",
+      "releaseDate": "July 24, 2025",
+      "updatedOn": "April 23, 2026",
+      "image": "/assets/games/card/doppelganger-card.webp",
+      "bannerImage": "/assets/games/doppelganger-or-neighbor-hero.webp",
+      "aboutImage": "/assets/games/about-game/doppelganger-about.webp",
+      "androidUrl": "https://play.google.com/store/search?q=Doppelganger%20or%20Neighbor%20Game&c=apps",
+      "iosUrl": "",
+      "heroSummary": "Take the security desk in a suspenseful 2D horror simulation where dangerous doppelgangers hide among ordinary residents. Watch closely, question what feels wrong, and decide who can be trusted before an impostor slips through.",
+      "description": "Doppelganger or Neighbor Game is a retro 2D horror world with deception and suspicious visitors, where you play as a vigilant security guard. Check IDs. Interrogate residents. Compare details. Watch behaviour closely. Who is human? Who might be a doppelganger? Logic, memory, camera footage, Polaroid images - anything that can be used to find inconsistencies before letting anyone in. The first-person simulation blends detective-style inspection with psychological horror, a Cold War-era atmosphere, progressive difficulty, and multiple endings shaped by the choices you make during each tense shift at your guarded building.",
+      "modes": [
+        "First Person",
+        "Horror Simulation",
+        "2D Retro"
+      ],
       "screenshots": [
-        "https://picsum.photos/id/14/900/560",
-        "https://picsum.photos/id/15/900/560",
-        "https://picsum.photos/id/16/900/560",
-        "https://picsum.photos/id/27/900/560",
-        "https://picsum.photos/id/28/900/560"
+        "/assets/games/doppelganger/image-one.webp",
+        "/assets/games/doppelganger/image-two.webp",
+        "/assets/games/doppelganger/image-three.webp",
+        "/assets/games/doppelganger/image-four.webp",
+        "/assets/games/doppelganger/image-five.webp"
       ],
+      "screenshotIntro": "Take a closer look at suspicious visitors, identity documents, camera evidence, retro environments, and the clues that can reveal who is hiding behind a familiar face.",
       "features": [
         {
-          "title": "Branching Investigations",
-          "description": "Every choice rewrites the case file. Multiple endings driven by what you discover."
+          "title": "Identity Inspection",
+          "description": "Examine IDs, compare details, question residents, and watch for unusual behavior before allowing anyone inside. Small inconsistencies can expose a doppelganger, making attention to detail and careful judgment central to every encounter."
         },
         {
-          "title": "Atmospheric Worlds",
-          "description": "Hand-crafted environments with dynamic lighting, sound design, and weather."
+          "title": "Camera Evidence",
+          "description": "Capture suspicious visitors with the camera and study Polaroid images for details that may not be obvious at first glance. Use visual evidence alongside documents and conversations to identify inconsistencies before making your decision."
         },
         {
-          "title": "Replayable Paths",
-          "description": "New Game+ uncovers hidden dialogue, alternate scenes, and secret endings."
+          "title": "Retro Horror",
+          "description": "Enter a Cold War-era world presented through retro 2D graphics and unsettling sound design. The atmosphere leans into psychological horror and suspense, creating tension through uncertainty, strange behavior, and the fear that someone familiar may not be human."
         },
         {
-          "title": "Original Score",
-          "description": "An adaptive soundtrack that reacts to tension, danger, and your decisions."
+          "title": "Choices & Endings",
+          "description": "Your decisions shape how the shift unfolds and can lead to multiple endings. As the difficulty increases, doppelgangers adapt and become harder to identify, forcing you to rely on logic, memory, observation, and everything you have learned from earlier encounters."
         }
       ],
+      "deviceRequirements": [
+        {
+          "title": "Android Requirements",
+          "items": [
+            [
+              "OS",
+              "Android 7.1 and up"
+            ],
+            [
+              "Store Version",
+              "1.1.1"
+            ],
+            [
+              "Compatible Device Version",
+              "1.1.2"
+            ],
+            [
+              "Compatibility",
+              "Works on Samsung SM-A166U"
+            ],
+            [
+              "Storage",
+              "90 MB download size"
+            ]
+          ]
+        },
+        {
+          "title": "Windows Availability",
+          "items": [
+            [
+              "Platform",
+              "Windows"
+            ],
+            [
+              "Installation",
+              "Google Play Games on PC required"
+            ],
+            [
+              "Technology",
+              "Powered by Intel technology"
+            ],
+            [
+              "Availability",
+              "Android and Windows"
+            ]
+          ]
+        }
+      ],
+      "details": [
+        [
+          "Category",
+          "Game Simulation"
+        ],
+        [
+          "Price",
+          "Free"
+        ],
+        [
+          "Updated On",
+          "April 23, 2026"
+        ],
+        [
+          "Downloads",
+          "50,000+ downloads"
+        ],
+        [
+          "Content Rating",
+          "Rated for 12+ - Horror"
+        ],
+        [
+          "In-App Purchases",
+          "Rs 500.00 per item"
+        ],
+        [
+          "Contains Ads",
+          "Yes"
+        ],
+        [
+          "Permissions",
+          "View details"
+        ]
+      ],
+      "cta": {
+        "heading": "Can You Tell Who Is Real?",
+        "description": "Take your place at the security desk and make every decision count. One visitor may look familiar, but not everyone standing at the door is who they claim to be.",
+        "buttonLabel": "Play Now"
+      },
+      "relatedSlugs": [
+        "midnight-shift-doppelganger",
+        "agent-for-hire-suit-shooter",
+        "last-survivor-left-zombie-war"
+      ],
       "requirements": {
-        "platform": "PC, Mobile",
+        "platform": "Android, Windows",
         "players": "Single player",
-        "release": "Available soon",
+        "release": "July 24, 2025",
         "minimum": {
-          "os": "Windows 10 (64-Bit)",
-          "processor": "Intel Core i3-8100 / AMD Ryzen 3 2200G",
-          "memory": "8 GB RAM",
-          "graphics": "NVIDIA GTX 960 / AMD RX 560",
-          "storage": "25 GB Available Space"
+          "os": "Android 7.1 and up",
+          "processor": "Supported Android device",
+          "memory": "Device dependent",
+          "graphics": "Supported Android GPU",
+          "storage": "90 MB download size"
         },
         "recommended": {
-          "os": "Windows 11 (64-Bit)",
-          "processor": "Intel Core i5-10400 / AMD Ryzen 5 3600",
-          "memory": "16 GB RAM",
-          "graphics": "NVIDIA GTX 1660 / AMD RX 5600 XT",
-          "storage": "25 GB SSD"
+          "os": "Android 7.1 and up / Windows via Google Play Games",
+          "processor": "Samsung SM-A166U or comparable",
+          "memory": "Device dependent",
+          "graphics": "Modern Android GPU",
+          "storage": "90 MB download size"
         }
-      }
+      },
+      "windowsUrl": "https://play.google.com/googleplaygames"
     },
     {
-      "slug": "grand-mafia",
-      "title": "Grand Mafia",
-      "genre": "Strategy",
+      "slug": "midnight-shift-doppelganger",
+      "title": "Midnight Shift: Doppelganger",
+      "genre": "Game Adventure",
       "tags": [
-        "Strategy",
+        "Horror",
         "Simulation",
-        "Multiplayer"
+        "3D"
       ],
-      "image": "https://picsum.photos/id/17/1200/700",
-      "androidUrl": "https://play.google.com/store/search?q=Grand%20Mafia&c=apps",
-      "iosUrl": "https://apps.apple.com/us/search?term=Grand%20Mafia",
-      "description": "Build an empire, manage alliances, and outsmart rival crews in a city that never sleeps.",
+      "developer": "WayWe Gaming",
+      "publisher": "WayWe Gaming",
+      "releaseDate": "January 10, 2026",
+      "updatedOn": "September 24, 2026",
+      "image": "/assets/games/card/mid-night-shift-card.webp",
+      "bannerImage": "/assets/games/mid-night-shift-hero.webp",
+      "aboutImage": "/assets/games/about-game/mid-night-shift-about.webp",
+      "androidUrl": "https://play.google.com/store/search?q=Midnight%20Shift%20Doppelganger&c=apps",
+      "iosUrl": "",
+      "heroSummary": "Enter a haunting 3D supermarket horror game where an ordinary night shift turns into something far more disturbing. Manage the store after dark while strange customers, supernatural events, and a hidden doppelganger turn routine work into a fight to survive.",
+      "description": "Midnight Shift: Doppelganger drops you into a 3D supermarket horror experience where an ordinary graveyard shift slowly turns into something disturbing. As eerie whispers, flickering lights, ghostly shadows, and supernatural events threaten to take over, serve customers, run the register, restock shelves, manage store tasks and keep the shop running. What starts as a familiar supermarket simulator soon becomes a tense mystery centred on a sinister doppelganger. Watch customers closely, handle each task under pressure, and survive a night where even your own reflection may not be easy to trust. Each aisle could hide another warning.",
+      "modes": [
+        "Store Simulation",
+        "Horror Adventure",
+        "3D"
+      ],
       "screenshots": [
-        "https://picsum.photos/id/18/900/560",
-        "https://picsum.photos/id/19/900/560",
-        "https://picsum.photos/id/20/900/560",
-        "https://picsum.photos/id/29/900/560",
-        "https://picsum.photos/id/30/900/560"
+        "/assets/games/mid-night-shift/image-one.webp",
+        "/assets/games/mid-night-shift/image-two.webp",
+        "/assets/games/mid-night-shift/image-three.webp",
+        "/assets/games/mid-night-shift/image-four.webp",
+        "/assets/games/mid-night-shift/image-five.webp"
       ],
+      "screenshotIntro": "Take a closer look at the supermarket, cashier station, customers, dark aisles, strange events, and unsettling moments that unfold during the midnight shift.",
       "features": [
         {
-          "title": "Territory Control",
-          "description": "Claim districts, defend them from rival crews, and expand your influence across the map."
+          "title": "Supermarket Shift",
+          "description": "Handle everyday store responsibilities, including serving customers, operating the cash register, restocking shelves, managing inventory, and keeping the supermarket functioning while working through the night."
         },
         {
-          "title": "Alliance Events",
-          "description": "Weekly alliance wars, co-op raids, and seasonal leaderboards with real rewards."
+          "title": "Haunted Store",
+          "description": "Explore a grocery store where flickering lights, eerie whispers, ghostly shadows, and supernatural activity gradually change the atmosphere. Familiar aisles become increasingly unsettling as the shift moves deeper into the night."
         },
         {
-          "title": "Living Economy",
-          "description": "A persistent player-driven market where prices react to supply and demand."
+          "title": "Doppelganger Mystery",
+          "description": "Watch the people entering the store and uncover the mystery surrounding a sinister double. The doppelganger element adds suspicion to customer encounters as you try to identify whether the person in front of you is really human."
         },
         {
-          "title": "Crew Customization",
-          "description": "Recruit, train, and equip a crew of specialists with unique skills and perks."
+          "title": "Horror Management",
+          "description": "The game blends supermarket simulation with horror and management gameplay. Complete retail tasks while responding to disturbing events, controlling the store, and trying to survive a graveyard shift where even familiar surroundings can no longer be trusted."
         }
       ],
+      "deviceRequirements": [
+        {
+          "title": "Android Requirements",
+          "items": [
+            [
+              "OS",
+              "Android 7.1 and up"
+            ],
+            [
+              "Version",
+              "1.0.28"
+            ],
+            [
+              "Compatibility",
+              "Works on Samsung SM-A166U"
+            ],
+            [
+              "Storage",
+              "102 MB download size"
+            ],
+            [
+              "Interactive Elements",
+              "In-Game Purchases"
+            ]
+          ]
+        },
+        {
+          "title": "Windows Availability",
+          "items": [
+            [
+              "Platform",
+              "Windows"
+            ],
+            [
+              "Installation",
+              "Google Play Games on PC required"
+            ],
+            [
+              "Technology",
+              "Powered by Intel technology"
+            ],
+            [
+              "Availability",
+              "Android and Windows"
+            ]
+          ]
+        }
+      ],
+      "details": [
+        [
+          "Category",
+          "Game Adventure"
+        ],
+        [
+          "Price",
+          "Free"
+        ],
+        [
+          "Rating",
+          "2.9 star"
+        ],
+        [
+          "Reviews",
+          "640 reviews"
+        ],
+        [
+          "Updated On",
+          "September 24, 2026"
+        ],
+        [
+          "Downloads",
+          "100,000+ downloads"
+        ],
+        [
+          "Content Rating",
+          "Rated for 12+ - Moderate Violence, Horror"
+        ],
+        [
+          "Contains Ads",
+          "Yes"
+        ],
+        [
+          "Permissions",
+          "View details"
+        ]
+      ],
+      "cta": {
+        "heading": "Can You Survive the Midnight Shift?",
+        "description": "Keep the store running as the night grows stranger, uncover what is hiding among your customers, and make it through the shift before the supermarket becomes something you cannot escape.",
+        "buttonLabel": "Play Now"
+      },
+      "relatedSlugs": [
+        "doppelganger-or-neighbor-game",
+        "grand-mafia-gangster-city-game",
+        "agent-for-hire-suit-shooter"
+      ],
       "requirements": {
-        "platform": "Mobile",
-        "players": "Massively multiplayer",
-        "release": "Live",
+        "platform": "Android, Windows",
+        "players": "Single player",
+        "release": "January 10, 2026",
         "minimum": {
-          "os": "Android 8.0 / iOS 13",
-          "processor": "Snapdragon 660 / Apple A10",
-          "memory": "3 GB RAM",
-          "graphics": "Adreno 512 / Apple GPU (A10)",
-          "storage": "2 GB Available Space"
+          "os": "Android 7.1 and up",
+          "processor": "Supported Android device",
+          "memory": "Device dependent",
+          "graphics": "Supported Android GPU",
+          "storage": "102 MB download size"
         },
         "recommended": {
-          "os": "Android 12 / iOS 16",
-          "processor": "Snapdragon 888 / Apple A15",
-          "memory": "6 GB RAM",
-          "graphics": "Adreno 660 / Apple GPU (A15)",
-          "storage": "4 GB Available Space"
+          "os": "Android 7.1 and up / Windows via Google Play Games",
+          "processor": "Samsung SM-A166U or comparable",
+          "memory": "Device dependent",
+          "graphics": "Modern Android GPU",
+          "storage": "102 MB download size"
         }
-      }
+      },
+      "windowsUrl": "https://play.google.com/googleplaygames"
     },
     {
-      "slug": "neon-arena",
-      "title": "Neon Arena",
-      "genre": "Competitive Shooter",
+      "slug": "last-survivor-left-zombie-war",
+      "title": "Last Survivor Left: Zombie War",
+      "genre": "Game Action",
       "tags": [
-        "Shooter",
-        "Competitive",
-        "Esports"
+        "Survival",
+        "Zombie Shooter",
+        "3D"
       ],
-      "image": "https://picsum.photos/id/21/1200/700",
-      "androidUrl": "https://play.google.com/store/search?q=Neon%20Arena&c=apps",
-      "iosUrl": "https://apps.apple.com/us/search?term=Neon%20Arena",
-      "description": "Fast rounds, expressive movement, and team tactics collide in a bright competitive arena.",
+      "developer": "WayWe Gaming",
+      "publisher": "WayWe Gaming",
+      "releaseDate": "",
+      "updatedOn": "June 18, 2026",
+      "image": "/assets/games/card/last-survivor-card.webp",
+      "bannerImage": "/assets/games/last-survivor-left-hero.webp",
+      "aboutImage": "/assets/games/about-game/last-survivor-about.webp",
+      "androidUrl": "https://play.google.com/store/search?q=Last%20Survivor%20Left%20Zombie%20War&c=apps",
+      "iosUrl": "",
+      "heroSummary": "Fight, craft, and survive in a brutal 3D open-world PvE island where civilization has fallen. Search hostile zones, face infected threats, gather what you need, and push deeper into an unforgiving zombie apocalypse.",
+      "description": "Last Survivor Left: Zombie War drops you into a brutal 3D open-world PvE survival challenge where every choice can decide how long you stay alive. Explore hostile island zones, gather resources, craft what you need, and fight through forests, wastelands, and zombie-infested areas after civilization falls. Face hordes, survive intense shooting encounters, hunt monsters, and push through doomsday conditions while managing limited supplies. The game blends island survival, crafting, exploration, and FPS-style 3D combat into a post-apocalyptic experience where preparation, movement, and survival skills matter with every step you take.",
+      "modes": [
+        "Open-World PvE",
+        "Island Survival",
+        "3D"
+      ],
       "screenshots": [
-        "https://picsum.photos/id/22/900/560",
-        "https://picsum.photos/id/23/900/560",
-        "https://picsum.photos/id/24/900/560",
-        "https://picsum.photos/id/31/900/560",
-        "https://picsum.photos/id/32/900/560"
+        "/assets/games/last-survivor/image-one.webp",
+        "/assets/games/last-survivor/image-two.webp",
+        "/assets/games/last-survivor/image-three.webp",
+        "/assets/games/last-survivor/image-four.webp",
+        "/assets/games/last-survivor/image-five.webp"
       ],
+      "screenshotIntro": "Take a closer look at the island, wilderness, apocalyptic zones, zombie encounters, weapons, resources, and survival environments.",
       "features": [
         {
-          "title": "Ranked Competition",
-          "description": "Skill-based matchmaking with seasonal ranks, placement matches, and decay."
+          "title": "Survival Crafting",
+          "description": "Search the environment for useful resources and materials, then use survival crafting to prepare for what comes next. Progress depends on how well you gather supplies, manage what you find, and stay ready for the dangers waiting beyond safer areas."
         },
         {
-          "title": "Custom Loadouts",
-          "description": "Deep weapon customization with attachments, skins, and per-class tuning."
+          "title": "Zombie Warfare",
+          "description": "Face infected enemies through zombie shooting encounters and survival firefights. Horde battles and large groups of enemies increase the pressure, turning open areas into dangerous combat zones where aim, movement, and survival instincts matter."
         },
         {
-          "title": "Tournament Ready",
-          "description": "Built-in bracket tools, spectator mode, and broadcast overlays for esports."
+          "title": "Island Exploration",
+          "description": "Travel across a 3D open world that stretches from wilderness and forests to hostile wastelands and post-apocalyptic areas. Different zones bring new dangers, resources, monster encounters, and reasons to continue exploring beyond familiar ground."
         },
         {
-          "title": "Fast Rounds",
-          "description": "5v5 matches designed for 15-minute sessions with instant rematch queues."
+          "title": "PvE Survival",
+          "description": "Take on PvE challenges built around surviving hostile environments, enemies, and the aftermath of the outbreak. The game combines FPS survival action, doomsday survival pressure, monster hunts, and ongoing survival challenges as you fight to remain the last survivor."
         }
       ],
+      "deviceRequirements": [
+        {
+          "title": "Android Requirements",
+          "items": [
+            [
+              "OS",
+              "Android 8.0 and up"
+            ],
+            [
+              "Version",
+              "1.0.5"
+            ],
+            [
+              "Compatibility",
+              "Works on Samsung SM-A166U"
+            ],
+            [
+              "Storage",
+              "195 MB download size"
+            ],
+            [
+              "Interactive Elements",
+              "In-Game Purchases"
+            ]
+          ]
+        }
+      ],
+      "details": [
+        [
+          "Category",
+          "Game Action"
+        ],
+        [
+          "Downloads",
+          "10,000+ downloads"
+        ],
+        [
+          "Price",
+          "Free"
+        ],
+        [
+          "Content Rating",
+          "Rated for 16+ - Strong Violence"
+        ],
+        [
+          "Contains Ads",
+          "Yes"
+        ],
+        [
+          "Permissions",
+          "View details"
+        ],
+        [
+          "Updated On",
+          "June 18, 2026"
+        ]
+      ],
+      "cta": {
+        "heading": "How Long Can You Stay Alive?",
+        "description": "Enter the island with nothing guaranteed. Build your survival skills, explore what remains of the world, and see how far you can make it when every day brings another threat.",
+        "buttonLabel": "Play Now"
+      },
+      "relatedSlugs": [
+        "grand-mafia-gangster-city-game",
+        "agent-for-hire-suit-shooter",
+        "midnight-shift-doppelganger"
+      ],
       "requirements": {
-        "platform": "PC, Console",
-        "players": "5v5 multiplayer",
-        "release": "In development",
+        "platform": "Android",
+        "players": "Single player",
+        "release": "June 18, 2026",
         "minimum": {
-          "os": "Windows 10 (64-Bit)",
-          "processor": "Intel Core i5-8400 / AMD Ryzen 5 2600",
-          "memory": "8 GB RAM",
-          "graphics": "NVIDIA GTX 1050 Ti / AMD RX 570",
-          "storage": "30 GB Available Space"
+          "os": "Android 8.0 and up",
+          "processor": "Supported Android device",
+          "memory": "Device dependent",
+          "graphics": "Supported Android GPU",
+          "storage": "195 MB download size"
         },
         "recommended": {
-          "os": "Windows 11 (64-Bit)",
-          "processor": "Intel Core i7-10700K / AMD Ryzen 7 3800X",
-          "memory": "16 GB RAM",
-          "graphics": "NVIDIA RTX 3060 / AMD RX 6600 XT",
-          "storage": "30 GB SSD"
+          "os": "Latest supported Android version",
+          "processor": "Samsung SM-A166U or comparable",
+          "memory": "Device dependent",
+          "graphics": "Modern Android GPU",
+          "storage": "195 MB download size"
         }
-      }
+      },
+      "windowsUrl": "https://play.google.com/googleplaygames"
     }
   ]
 }

@@ -3,7 +3,7 @@ export default function PageHero({ imagePath, pageName, heading, description }) 
     <section
       className="relative overflow-hidden bg-cover bg-center px-6 py-16 sm:px-10 lg:px-12"
       style={{
-        backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, .9), rgba(0, 0, 0, .35)), url('${imagePath}')`,
+        backgroundImage: `linear-gradient(90deg, rgba(0, 0, 0, .7), rgba(0, 0, 0, .1)), url('${imagePath}')`,
       }}
     >
       <div className="relative mx-auto max-w-6xl mt-[80px]">

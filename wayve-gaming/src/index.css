@@ -1,10 +1,10 @@
-@tailwind base;
+﻿@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @font-face {
   font-family: 'Nico Moji';
-  src: url('/fontNicoMoji/nicomoji-regular.ttf') format('truetype');
+  src: url('./assets/fontNicoMoji/nicomoji-regular.ttf') format('truetype');
   font-display: swap;
   font-style: normal;
   font-weight: 700;
@@ -244,7 +244,7 @@
 
 
 /* ============================================================
-   SHUTTER STACK — 3 sticky panels
+   SHUTTER STACK â€” 3 sticky panels
    ============================================================ */
 .stack-container {
   position: relative;
@@ -319,11 +319,15 @@
   transition: opacity .15s linear;
 }
 
-/* ---------- Panel 3 — Hero background image ---------- */
+/* ---------- Panel 3 â€” Hero background image ---------- */
 .panel-3 .panel__bg {
-  background-image: url('/heroimage/gameslider3.png');
+  background-image: url('./assets/heroimage/slider-one.webp');
   background-position: center right;
 }
+
+/* html:not(.dark) .panel-3 .panel__bg {
+  background-image: url('./assets/heroimage/slider-one-light.webp');
+} */
 
 .panel-3 .panel__bg::after {
   background: linear-gradient(
@@ -725,4 +729,5 @@ button.btn-outline:hover {
 .dark .faq-glow-card .text-primary {
   color: #ff7e00;
 }
+
 

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import loadingImage from '../assets/loadingImage/wayweimage.png';
 
 export default function LoadingScreen({ onComplete }) {
   const [progress, setProgress] = useState(0);
@@ -84,7 +85,7 @@ export default function LoadingScreen({ onComplete }) {
 
       {/* LOGO — replace src with your own */}
       <img
-        src="/loadingImage/wayweimage.png"
+        src={loadingImage}
         alt="Waywe Gaming"
         className="w-64 md:w-80 lg:w-96 h-auto select-none mb-6"
         draggable="false"
